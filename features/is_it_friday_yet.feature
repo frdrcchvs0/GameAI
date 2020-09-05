@@ -1,12 +1,12 @@
 Feature: Is it Friday yet?
   Everybody wants to know when it's Friday
 
-  Scenario: Sunday isn't Friday
-    Given today is "Sunday"
+  Scenario Outline: Test day of the week
+    Given today is "<day>"
     When I ask whether it's Friday yet
-    Then I should be told "false"
+    Then I should be told "<answer>"
 
-  Scenario: Finally Friday
-    Given today is "Friday"
-    When I ask whether it's Friday yet
-    Then I should be told "true"
+    Examples:
+      | day    | answer |
+      | Friday | true   |
+      | Sunday | false  |
