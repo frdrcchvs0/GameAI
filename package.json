@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/frdrcchvs0/GameAI#readme",
   "devDependencies": {
-    "cucumber": "^6.0.5"
+    "cucumber": "^6.0.5",
+    "assert": "^2.0.0"
   },
   "dependencies": {
-    "@types/node": "^14.6.4",
-    "assert": "^2.0.0"
+    "@types/node": "^14.6.4"
   }
 }
